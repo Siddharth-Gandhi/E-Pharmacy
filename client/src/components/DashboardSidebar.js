@@ -41,7 +41,7 @@ const items = [
     title: 'Patients'
   },
   {
-    href: '/app/products',
+    href: '/app/medicines',
     icon: ShoppingBagIcon,
     title: 'Medicines'
   },

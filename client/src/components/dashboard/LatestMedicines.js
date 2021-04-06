@@ -15,35 +15,35 @@ import {
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 
-const products = [
+const medicines = [
   {
     id: uuid(),
     name: 'Dropbox',
-    imageUrl: '/static/images/products/product_1.png',
+    imageUrl: '/static/images/medicines/medicine_1.png',
     updatedAt: moment().subtract(2, 'hours')
   },
   {
     id: uuid(),
     name: 'Medium Corporation',
-    imageUrl: '/static/images/products/product_2.png',
+    imageUrl: '/static/images/medicines/medicine_2.png',
     updatedAt: moment().subtract(2, 'hours')
   },
   {
     id: uuid(),
     name: 'Slack',
-    imageUrl: '/static/images/products/product_3.png',
+    imageUrl: '/static/images/medicines/medicine_3.png',
     updatedAt: moment().subtract(3, 'hours')
   },
   {
     id: uuid(),
     name: 'Lyft',
-    imageUrl: '/static/images/products/product_4.png',
+    imageUrl: '/static/images/medicines/medicine_4.png',
     updatedAt: moment().subtract(5, 'hours')
   },
   {
     id: uuid(),
     name: 'GitHub',
-    imageUrl: '/static/images/products/product_5.png',
+    imageUrl: '/static/images/medicines/medicine_5.png',
     updatedAt: moment().subtract(9, 'hours')
   }
 ];
@@ -51,20 +51,20 @@ const products = [
 const LatestProducts = (props) => (
   <Card {...props}>
     <CardHeader
-      subtitle={`${products.length} in total`}
-      title="Latest Products"
+      subtitle={`${medicines.length} in total`}
+      title="Latest Medicines"
     />
     <Divider />
     <List>
-      {products.map((product, i) => (
+      {medicines.map((medicine, i) => (
         <ListItem
-          divider={i < products.length - 1}
-          key={product.id}
+          divider={i < medicines.length - 1}
+          key={medicine.id}
         >
           <ListItemAvatar>
             <img
-              alt={product.name}
-              src={product.imageUrl}
+              alt={medicine.name}
+              src={medicine.imageUrl}
               style={{
                 height: 48,
                 width: 48
@@ -72,8 +72,8 @@ const LatestProducts = (props) => (
             />
           </ListItemAvatar>
           <ListItemText
-            primary={product.name}
-            secondary={`Updated ${product.updatedAt.fromNow()}`}
+            primary={medicine.name}
+            secondary={`Updated ${medicine.updatedAt.fromNow()}`}
           />
           <IconButton
             edge="end"

@@ -6,7 +6,7 @@ import PatientList from 'src/pages/PatientList';
 import Dashboard from 'src/pages/Dashboard';
 import Login from 'src/pages/Login';
 import NotFound from 'src/pages/NotFound';
-import ProductList from 'src/pages/ProductList';
+import MedicineList from 'src/pages/MedicineList';
 import Register from 'src/pages/Register';
 import Settings from 'src/pages/Settings';
 
@@ -18,7 +18,7 @@ const routes = [
       { path: 'account', element: <Account /> },
       { path: 'patients', element: <PatientList /> },
       { path: 'dashboard', element: <Dashboard /> },
-      { path: 'products', element: <ProductList /> },
+      { path: 'medicines', element: <MedicineList /> },
       { path: 'settings', element: <Settings /> },
       { path: '*', element: <Navigate to="/404" /> }
     ]

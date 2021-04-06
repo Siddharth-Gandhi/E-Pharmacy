@@ -5,14 +5,14 @@ import {
   Grid,
   Pagination
 } from '@material-ui/core';
-import ProductListToolbar from 'src/components/product/ProductListToolbar';
-import ProductCard from 'src/components/product//ProductCard';
-import products from 'src/__mocks__/products';
+import MedicineListToolbar from 'src/components/medicine/MedicineListToolbar';
+import MedicineCard from 'src/components/medicine//MedicineCard';
+import medicines from 'src/__mocks__/medicines';
 
-const ProductList = () => (
+const MedicineList = () => (
   <>
     <Helmet>
-      <title>Products | Material Kit</title>
+      <title>Medicines | Material Kit</title>
     </Helmet>
     <Box
       sx={{
@@ -22,21 +22,21 @@ const ProductList = () => (
       }}
     >
       <Container maxWidth={false}>
-        <ProductListToolbar />
+        <MedicineListToolbar />
         <Box sx={{ pt: 3 }}>
           <Grid
             container
             spacing={3}
           >
-            {products.map((product) => (
+            {medicines.map((medicine) => (
               <Grid
                 item
-                key={product.id}
+                key={medicine.id}
                 lg={4}
                 md={6}
                 xs={12}
               >
-                <ProductCard product={product} />
+                <MedicineCard medicine={medicine} />
               </Grid>
             ))}
           </Grid>
@@ -59,4 +59,4 @@ const ProductList = () => (
   </>
 );
 
-export default ProductList;
+export default MedicineList;
