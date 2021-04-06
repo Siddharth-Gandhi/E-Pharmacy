@@ -7,7 +7,7 @@ import patients from 'src/__mocks__/patients';
 const PatientList = () => (
   <>
     <Helmet>
-      <title>Patients | Material Kit</title>
+      <title>Patients | E-Pharmacy</title>
     </Helmet>
     <Box
       sx={{

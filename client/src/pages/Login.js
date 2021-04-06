@@ -20,7 +20,7 @@ const Login = () => {
   return (
     <>
       <Helmet>
-        <title>Login | Material Kit</title>
+        <title>Login | E-Pharmacy</title>
       </Helmet>
       <Box
         sx={{
@@ -34,7 +34,7 @@ const Login = () => {
         <Container maxWidth="sm">
           <Formik
             initialValues={{
-              email: 'demo@devias.io',
+              email: 'demo@epharmacy.com',
               password: 'Password123'
             }}
             validationSchema={Yup.object().shape({

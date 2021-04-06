@@ -27,9 +27,9 @@ const states = [
 
 const AccountProfileDetails = (props) => {
   const [values, setValues] = useState({
-    firstName: 'Katarina',
-    lastName: 'Smith',
-    email: 'demo@devias.io',
+    firstName: 'Test',
+    lastName: 'User',
+    email: 'demo@epharmacy.com',
     phone: '',
     state: 'Alabama',
     country: 'USA'

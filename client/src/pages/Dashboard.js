@@ -16,7 +16,7 @@ import TotalProfit from 'src/components/dashboard//TotalProfit';
 const Dashboard = () => (
   <>
     <Helmet>
-      <title>Dashboard | Material Kit</title>
+      <title>Dashboard | E-Pharmacy</title>
     </Helmet>
     <Box
       sx={{
