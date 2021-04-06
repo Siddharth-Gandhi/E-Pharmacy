@@ -1,6 +1,6 @@
 # E-Pharmacy Management System
 
-### Made with React
+### Made with React, Express & MongoDB
 
 Run `npm install` to install all dependencies. Please make sure that you have *Babel Javascript* & *ESLint* VSCode extensions installed.
 Start the app using `npm run start` or `npm start`.
