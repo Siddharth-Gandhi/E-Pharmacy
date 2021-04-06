@@ -11,7 +11,7 @@ import {
 } from '@material-ui/core';
 
 const user = {
-  avatar: '/static/images/avatars/avatar_6.png',
+  avatar: '/static/images/avatars/avatar_12.png',
   city: 'Los Angeles',
   country: 'USA',
   jobTitle: 'Senior Developer',

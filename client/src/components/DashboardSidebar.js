@@ -24,7 +24,7 @@ import {
 import NavItem from './NavItem';
 
 const user = {
-  avatar: '/static/images/avatars/avatar_6.png',
+  avatar: '/static/images/avatars/avatar_12.png',
   jobTitle: 'Senior Developer',
   name: 'Katarina Smith'
 };
@@ -43,7 +43,7 @@ const items = [
   {
     href: '/app/products',
     icon: ShoppingBagIcon,
-    title: 'Products'
+    title: 'Medicines'
   },
   {
     href: '/app/account',
