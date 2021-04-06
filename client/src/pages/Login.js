@@ -11,7 +11,7 @@ import {
   TextField,
   Typography
 } from '@material-ui/core';
-import FacebookIcon from 'src/icons/Facebook';
+// import FacebookIcon from 'src/icons/Facebook';
 import GoogleIcon from 'src/icons/Google';
 
 const Login = () => {
@@ -74,7 +74,7 @@ const Login = () => {
                   container
                   spacing={3}
                 >
-                  <Grid
+                  {/* <Grid
                     item
                     xs={12}
                     md={6}
@@ -89,11 +89,11 @@ const Login = () => {
                     >
                       Login with Facebook
                     </Button>
-                  </Grid>
+                  </Grid> */}
                   <Grid
                     item
                     xs={12}
-                    md={6}
+                    md={12}
                   >
                     <Button
                       fullWidth
