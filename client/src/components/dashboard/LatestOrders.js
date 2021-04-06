@@ -23,7 +23,7 @@ const orders = [
     id: uuid(),
     ref: 'CDD1049',
     amount: 30.5,
-    customer: {
+    patient: {
       name: 'Ekaterina Tankova'
     },
     createdAt: 1555016400000,
@@ -33,7 +33,7 @@ const orders = [
     id: uuid(),
     ref: 'CDD1048',
     amount: 25.1,
-    customer: {
+    patient: {
       name: 'Cao Yu'
     },
     createdAt: 1555016400000,
@@ -43,7 +43,7 @@ const orders = [
     id: uuid(),
     ref: 'CDD1047',
     amount: 10.99,
-    customer: {
+    patient: {
       name: 'Alexa Richardson'
     },
     createdAt: 1554930000000,
@@ -53,7 +53,7 @@ const orders = [
     id: uuid(),
     ref: 'CDD1046',
     amount: 96.43,
-    customer: {
+    patient: {
       name: 'Anje Keizer'
     },
     createdAt: 1554757200000,
@@ -63,7 +63,7 @@ const orders = [
     id: uuid(),
     ref: 'CDD1045',
     amount: 32.54,
-    customer: {
+    patient: {
       name: 'Clarke Gillebert'
     },
     createdAt: 1554670800000,
@@ -73,7 +73,7 @@ const orders = [
     id: uuid(),
     ref: 'CDD1044',
     amount: 16.76,
-    customer: {
+    patient: {
       name: 'Adam Denisov'
     },
     createdAt: 1554670800000,
@@ -94,7 +94,7 @@ const LatestOrders = (props) => (
                 Order Ref
               </TableCell>
               <TableCell>
-                Customer
+                Patient
               </TableCell>
               <TableCell sortDirection="desc">
                 <Tooltip
@@ -124,7 +124,7 @@ const LatestOrders = (props) => (
                   {order.ref}
                 </TableCell>
                 <TableCell>
-                  {order.customer.name}
+                  {order.patient.name}
                 </TableCell>
                 <TableCell>
                   {moment(order.createdAt).format('DD/MM/YYYY')}
